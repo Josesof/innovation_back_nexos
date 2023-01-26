@@ -24,8 +24,7 @@ public class UnidadMedida implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
-    @Column(name = "id_unidad_medida")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idUnidadMedida;
     @Column(name = "nombre_medida")
     private String nombreMedida;

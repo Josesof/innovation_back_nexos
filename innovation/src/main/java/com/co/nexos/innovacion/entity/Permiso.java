@@ -24,8 +24,7 @@ public class Permiso implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
-    @Column(name = "id_permiso")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idPermiso;
     @Column(name = "nombre_permiso")
     private String nombrePermiso;

@@ -24,8 +24,7 @@ public class Umbral implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
-    @Column(name = "id_umbrales")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idUmbrales;
     @Column(name = "max")
     private Float max;

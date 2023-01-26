@@ -24,8 +24,7 @@ public class SitioCapturaDato implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
-    @Column(name = "id_sitio_captura_dato")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idSitioCapturaDato;
     @Column(name = "nombre_sitio")
     private String nombreSitio;

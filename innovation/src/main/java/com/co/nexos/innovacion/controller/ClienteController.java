@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.*;
  *
  * @author jdrivera
  */
-@CrossOrigin
+
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"Authorization", "Origin"},
+	exposedHeaders = {"Access-Control-Allow-Origin", "Access-Control-Allow-Credentials"})
 @RestController
 @RequestMapping(value = "cliente", produces = {MediaType.APPLICATION_JSON_VALUE})
 public class ClienteController {

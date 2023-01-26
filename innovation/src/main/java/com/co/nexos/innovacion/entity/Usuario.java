@@ -24,8 +24,7 @@ public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
-    @Column(name = "id_usuario")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idUsuario;
     @Column(name = "nombres")
     private String nombres;

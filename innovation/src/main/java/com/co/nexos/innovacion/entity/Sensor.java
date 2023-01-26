@@ -24,8 +24,7 @@ public class Sensor implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
-    @Column(name = "id_sensor")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idSensor;
     @Column(name = "nombre_sensor")
     private String nombreSensor;
